@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .chat-container {
+            max-width: 300px;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .chat-header {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 8px;
+            max-width: 100%;
+        }
+
+        .message img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .message-left {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        .message-left .message-text {
+            background-color: #e0e0e0;
+            margin-left: 10px;
+        }
+
+        .message-right {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .message-right .message-text {
+            background-color: #cfe9ff;
+            margin-right: 10px;
+        }
+
+        .message-text {
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Chat</div>
+        
+        <!-- Mensaje 1: Alineado a la izquierda -->
+        <div class="message message-left">
+            <img src="https://via.placeholder.com/40" alt="User">
+            <div class="message-text">Hola, ¿cómo estás?</div>
+        </div>
+        
+        <!-- Mensaje 2: Alineado a la derecha -->
+        <div class="message message-right">
+            <div class="message-text">Estoy bien, gracias. ¿Y tú?</div>
+            <img src="https://via.placeholder.com/40" alt="User">
+        </div>
+        
+        <!-- Mensaje 3: Alineado a la izquierda -->
+        <div class="message message-left">
+            <img src="https://via.placeholder.com/40" alt="User">
+            <div class="message-text">Todo bien, gracias por preguntar.</div>
+        </div>
+        
+        <!-- Mensaje 4: Alineado a la derecha -->
+        <div class="message message-right">
+            <div class="message-text">¡Qué bueno! ¿Qué planes tienes para hoy?</div>
+            <img src="https://via.placeholder.com/40" alt="User">
+        </div>
+    </div>
+</body>
+</html>
